@@ -1,0 +1,26 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+<div>
+    <h1>This is course Section</h1>
+
+    <table>
+        <tr>
+            <th>Student_Id</th>
+            <th>Student_Name</th>
+            <th>Student_Email</th>
+            <th>Student_pass/fail</th>
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{student.stuid}}</td>
+            <td>{{student.stuname}}</td>
+            <td>{{student.stuemail}}</td>
+            <td>{{student.stupass}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</div>
+{% endblock %}
