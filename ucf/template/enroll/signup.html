@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+</head>
+<body>
+<form action="" method="post" novalidate>
+    {% csrf_token %}
+    {% for fm in form %}
+        {{fm.label_tag}} {{fm}} {{fm.errors | striptags}}<br><br>
+    {% endfor %}
+    <input type="submit" value="Submit">
+</form>
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+<a href="{% url 'login' %}">Login</a>
+</body>
+</html>
