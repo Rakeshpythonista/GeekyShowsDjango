@@ -3,28 +3,19 @@
 
 {% block content %}
 
-
-<div class="tab">
-    <button class="tablinks" onclick="Notes('Backend')">Backend</button>
-    <button class="tablinks" onclick="Notes('Datascience')">Datascience</button>
-    <button class="tablinks" onclick="Notes('More')">More</button>
-</div>
-
-<!-- Backend Section -->
-
-<div id="Backend" class="tabcontent">
-    <div class="row">
-        <div class="column">
-            <div class="card">
+<div class="container-fluid">
+    <div class="row row-cols-4">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/bnd/Core Python Index-merged.pdf' %}" target="_blank">
-                    <img src="static/images/Python_core.jpg" width="270" height="250">
+                    <img src="static/images/Python_core.jpg" width="250" height="250">
                 </a>
                 <h3>Python Core</h3>
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/bnd/Advanced Python Index-merged.pdf' %}" target="_blank">
                     <img src="static/images/Python_advanced.jpg" width="270" height="250">
                 </a>
@@ -32,8 +23,8 @@
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/bnd/Django_Durga.pdf' %}" target="_blank">
                     <img src="static/images/1.png" width="270" height="250">
                 </a>
@@ -41,19 +32,17 @@
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/bnd/RestAPI_Durga.pdf' %}" target="_blank">
                     <img src="static/images/2.png" width="270" height="250">
                 </a>
                 <h3>Django-RESTApi</h3>
             </div>
         </div>
-    </div>
-    <span style="white-space: pre">   </span>
-    <div class="row">
-        <div class="column">
-            <div class="card">
+
+        <div class="col">
+            <div>
                 <a href="{% static 'media/bnd/Jinja2.pdf' %}" target="_blank">
                     <img src="static/images/3.png" width="270" height="250">
                 </a>
@@ -61,8 +50,8 @@
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/bnd/Concurrency-in-Python.pdf' %}" target="_blank">
                     <img src="static/images/4.png" width="270" height="250">
                 </a>
@@ -70,8 +59,8 @@
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/bnd/mysql-tutorial.pdf' %}" target="_blank">
                     <img src="static/images/mysql.png" width="270" height="250">
                 </a>
@@ -79,23 +68,17 @@
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/bnd/Postgresql-Tutorial.pdf' %}" target="_blank">
                     <img src="static/images/postgresql.png" width="270" height="250">
                 </a>
                 <h3>PostgreSQL</h3>
             </div>
         </div>
-    </div>
-</div>
 
-<!-- DataScience Section -->
-
-<div id="Datascience" class="tabcontent">
-    <div class="row">
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/ds/Numpy-Tutorial.pdf' %}" target="_blank">
                     <img src="static/images/ds3.png" width="270" height="250">
                 </a>
@@ -103,8 +86,8 @@
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/ds/Pandas-Tutorial.pdf' %}" target="_blank">
                     <img src="static/images/ds7.png" width="270" height="250">
                 </a>
@@ -112,8 +95,8 @@
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/ds/Introduction to statistical learning.pdf' %}" target="_blank">
                     <img src="static/images/ds2.png" width="270" height="250">
                 </a>
@@ -121,19 +104,16 @@
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/ds/seaborn_tutorial.pdf' %}" target="_blank">
                     <img src="static/images/ds9.png" width="270" height="250">
                 </a>
                 <h3>Seaborn</h3>
             </div>
         </div>
-    </div>
-    <span style="white-space: pre">   </span>
-    <div class="row">
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/ds/The-Matplotlib-User-s-Guide.pdf' %}" target="_blank">
                     <img src="static/images/ds10.png" width="270" height="250">
                 </a>
@@ -141,8 +121,8 @@
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/ds/scikit_learn_tutorial.pdf' %}" target="_blank">
                     <img src="static/images/ds8.png" width="270" height="250">
                 </a>
@@ -150,51 +130,43 @@
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
-                <a href="{% static 'media/ds/Hands–On Machine Learning with Scikit–Learn and TensorFlow.pdf' %}" target="_blank">
+        <div class="col">
+            <div>
+                <a href="{% static 'media/ds/Hands–On Machine Learning with Scikit–Learn and TensorFlow.pdf' %}"
+                   target="_blank">
                     <img src="static/images/ds1.png" width="270" height="250">
                 </a>
                 <h3>Machine Learning with sklearn, Keras & TensorFlow</h3>
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/ds/Python-Datascience-Handbook.pdf' %}" target="_blank">
                     <img src="static/images/ds4.png" width="270" height="250">
                 </a>
                 <h3>Python For Data Science</h3>
             </div>
         </div>
-    </div>
-    <span style="white-space: pre">   </span>
-    <div class="row">
-        <div class="column">
-            <div class="card">
+
+        <div class="col">
+            <div>
                 <a href="{% static 'media/ds/Python-for-Data-Analysis-2nd-Edition.pdf' %}" target="_blank">
                     <img src="static/images/ds5.png" width="270" height="250">
                 </a>
                 <h3>Python For Data Analysis</h3>
             </div>
         </div>
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/ds/pythonmachinelearningbyexample.pdf' %}" target="_blank">
                     <img src="static/images/ds6.png" width="270" height="250">
                 </a>
                 <h3>Machine Learning by Example</h3>
             </div>
         </div>
-    </div>
-</div>
-
-<!-- More Section -->
-
-<div id="More" class="tabcontent">
-    <div class="row">
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/more/Data Science.pdf' %}" target="_blank">
                     <img src="static/images/m1.png" width="270" height="250">
                 </a>
@@ -202,8 +174,8 @@
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/more/Getting your first Data Science Job.pdf' %}" target="_blank">
                     <img src="static/images/m2.png" width="270" height="250">
                 </a>
@@ -211,8 +183,8 @@
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/more/Data Engineering.pdf' %}" target="_blank">
                     <img src="static/images/m3.png" width="270" height="250">
                 </a>
@@ -220,19 +192,17 @@
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/more/Statistics.pdf' %}" target="_blank">
                     <img src="static/images/m4.png" width="270" height="250">
                 </a>
                 <h3>Statistics Cheatsheet</h3>
             </div>
         </div>
-    </div>
-    <span style="white-space: pre">   </span>
-    <div class="row">
-        <div class="column">
-            <div class="card">
+
+        <div class="col">
+            <div>
                 <a href="{% static 'media/more/Machine Learning.pdf' %}" target="_blank">
                     <img src="static/images/m5.png" width="270" height="250">
                 </a>
@@ -240,8 +210,8 @@
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/more/Supervised Learning.pdf' %}" target="_blank">
                     <img src="static/images/m6.png" width="270" height="250">
                 </a>
@@ -249,8 +219,8 @@
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
+        <div class="col">
+            <div>
                 <a href="{% static 'media/more/GIT.pdf' %}" target="_blank">
                     <img src="static/images/m7.png" width="270" height="250">
                 </a>
@@ -259,5 +229,8 @@
         </div>
     </div>
 </div>
+
+<!-- More Section -->
+
 
 {% endblock %}

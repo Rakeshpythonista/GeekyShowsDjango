@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+
+<h1>Class Based Views</h1>
+<table class="table">
+    <tr>
+        <th>Eno</th>
+        <th>Ename</th>
+        <th>Esal</th>
+        <th>Eaddr</th>
+    </tr>
+    {% for detail in details %}
+    <tr>
+        <td>{{detail.eno}}</td>
+        <td>{{detail.ename}}</td>
+        <td>{{detail.esal}}</td>
+        <td>{{detail.eaddr}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

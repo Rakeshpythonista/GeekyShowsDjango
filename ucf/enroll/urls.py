@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+from django.views.generic import VI
 
 urlpatterns = [
     path('', views.sign_up, name='signup'),
